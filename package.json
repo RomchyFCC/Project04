@@ -1,14 +1,17 @@
 {
-  "homepage": "https://myusername.github.io/Project04",
+  "homepage": "https://romchyfcc.github.io/Project04/",
   "name": "recipes",
   "version": "0.5.4",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
